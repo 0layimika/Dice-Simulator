@@ -2,6 +2,8 @@ import random
 # while True:
 print("welcome to the dice simulator!!!")
 start=input('Type "start" to begin:')
+while start.lower() != 'start':
+    start = input('Type "start" to begin:')
 if start.lower()=="start":
     while True:
         x=random.randint(1,7)
@@ -12,7 +14,6 @@ if start.lower()=="start":
             break
         else:
             continue
-else:
-    print("invalid input!!")
+
 
 
